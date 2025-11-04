@@ -7,8 +7,7 @@ function fetchUsers() {
             return res.json();
         })
         .then(function (data) {
-            for (let i = 0; i < data.length; i++) {
-                const user = data[i];
+            data.forEach(function (user) {
                 const li = document.createElement("li");
                 li.textContent = `${user.name} | `;
                 const emailLink = document.createElement("a");
@@ -32,7 +31,8 @@ function fetchUsers() {
                     }
                 });
                 listEl.appendChild(li);
-            }
+            })
+
         })
         .catch(function (error) {
             errorEl.textContent =
