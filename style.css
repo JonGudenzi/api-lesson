@@ -1,5 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+#userList {
+  list-style: none;
+  padding: 0;
+}
+
+#userList li {
+  background: #f5f5f5;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+#userList button {
+  margin-left: 10px;
+  cursor: pointer;
+}
 #errorMsg {
   color: red;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
